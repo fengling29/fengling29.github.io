@@ -1,0 +1,20 @@
+
+
+<html>
+<head>
+    <!-- 为页面上的所有链接规定默认全局地址或目标,是一种表达路径和连接网址的标签。 -->
+　　 <base href="http://www.baidu.com/Static/img/"/>
+　　 <base target="_blank"/>
+    <!-- 说明：通常情况下，浏览器会从当前文档的URL中提取相应的元素来填写相对URL中的空白。使用<base>标签可以改变这一点。
+        浏览器随后将不再使用当前文档的URL，而使用指定的基本URL来解析所有的相对URL。
+        这其中包括<a>、<img>、<link>、<form>标签中的URL。 -->
+</head>
+<body>
+　　 <img src="banner7.jpg"/><br>
+    <p>请注意，我们已经为图像规定了一个相对地址。由于我们已经在head部分规定了一个基准URL，浏览器将在如下地址寻找图片：</p>
+　　 <p>"http://www.baidu.com/Static/img/banner7.jpg"</p>
+　　 <br/>
+　　 <p><a href="http://www.baidu.com">百度</a></p>
+　　 <p>请注意，链接会在新窗口中打开，即使链接中没有target="_blank"属性。这是因为base元素的target属性已经被设置为"_blank"了。</p>
+</body>
+</html>
